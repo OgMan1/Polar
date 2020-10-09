@@ -5,21 +5,22 @@ html {
 }
 
 .mainBackgroundImage, .mainCardBackgroundImage {
-    background-image: url(./images/hydra.jpg);
+    background-image: url(./images/main.jpg);
     background-color: gray;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     height: 100vh;
 }
 
 .mainCardBackgroundImage {
-    background-image: url(./images/elemental.jpg);
+    background-image: url(./images/team.jpg);
+    background-position: center;
 }
 
-.backgroundBlack {
+.backgroundBlack, .cardBackgroundBlack {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
 }
 
@@ -31,10 +32,14 @@ html {
     align-items: center;
 }
 
-.mainEnter h1 {
+.mainH1, .cardH1 {
     font-size: 5em;
     text-shadow: 2px 1px red;
     text-align: center;
+}
+
+.cardH1 {
+    text-shadow: none;
 }
 
 .mainForm {
@@ -45,15 +50,25 @@ html {
     font-size: 1.25em;
 }
 
-.mainForm .nameInput {
+.mainForm .nameInput, .mainEnter .cardInput {
     display: block;
-    padding: 0.35em 1em;
+    padding: 0.2em 1em;
     margin: 0.35em auto 0;
     font-size: 1.15em;
 }
 
+.mainEnter .cardInput {
+    display: inline;
+    font-size: 1em;
+
+}
+
+.mainEnter .fa-search {
+font-size: 1.5em;
+}
+
 .mainBtn {
-     margin-top: 1.5em;
+     margin-top: 2.5em;
      padding: 0.75em 2.5em; 
     background-color: red;
     color: white;
